@@ -1,0 +1,19 @@
+/* Colors
+##003145 // rgb(0,49,69)
+#696765 // rgb(105,103,101)
+#005984 // rgb(0,89,132)
+#FAA61A // rgb(250, 166, 26)
+#72c7e7 // rgb(114,199,231)
+*/
+:root {
+  --primary-color: #003145;
+  --secondary-color: #faa61a;
+  --tertiary-color: #72c7e7;
+  --bg-color: #696765;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
