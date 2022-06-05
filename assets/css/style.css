@@ -78,6 +78,7 @@ h3 {
 a {
   border-radius: 9px;
   padding: 1rem;
+  color: var(--primary-color);
 }
 
 .job-title {
@@ -103,6 +104,25 @@ header nav {
   margin: 0 1.5rem;
   color: var(--primary-color);
   font-size: 2rem;
+}
+
+.nav-list a:hover,
+.nav-list a:active,
+.contact a:hover,
+.contact a:active {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  font-weight: 700;
+}
+
+.nav-list a:link,
+.nav-list a:visited,
+.contact a:link,
+.contact a:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s;
 }
 
 .hero {
@@ -263,20 +283,4 @@ header nav {
   cursor: pointer;
   font-size: 1.8rem;
   text-align: center;
-}
-
-a:link,
-a:visited {
-  display: inline-block;
-  text-decoration: none;
-  font-weight: 700;
-  transition: all 0.3s;
-  color: var(--primary-color);
-}
-
-a:hover,
-a:active {
-  color: var(--secondary-color);
-  background-color: var(--primary-color);
-  font-weight: 700;
 }
