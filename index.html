@@ -4,17 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Douglas Red</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <h1>Douglas Red</h1>
       <nav>
-        <ul>
-          <li>About Me</li>
-          <li>Work</li>
-          <li>Contact Me</li>
-          <li>Resume</li>
+        <ul class="nav-list">
+          <li>
+            <a href="#about-me-container">About Me</a>
+          </li>
+          <li>
+            <a href="#work-container">Work</a>
+          </li>
+          <li>
+            <a href="#contact-me-container">Contact Me</a>
+          </li>
+          <li>
+            <a href="#">Resume</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -24,34 +33,69 @@
       </div>
     </section>
     <section class="main-container">
-      <section class="about-me-container">
-        <div>
+      <section id="about-me-container" class="about-me-container">
+        <div class="h2-title">
           <h2>About Me</h2>
         </div>
-        <div>
-          <p>About me text--- fill here</p>
+        <div class="about-me-text">
+          <p>
+            Hello! My name is Douglas Red and I am currently seeking a full
+            stack developer position. I have a plethora of experiences creating
+            webpages, using git in a team environment, and using MERN stack.
+
+            <br />
+            <br />
+            Web development is a passion of mine that forces me to critcally
+            think. I love a good challenge that keeps me on my toes and allows
+            me to sharpen and hone my skills. For example, please view my
+            projects below and witness the growth I have experienced in the last
+            year. I have learned so much and as many Talent & Development
+            professionals say, "Learning is a never ending journey". Foruntate
+            for me, I love a good adventure!
+          </p>
         </div>
       </section>
-      <section class="work-container">
-        <div>
+      <section id="work-container" class="work-container">
+        <div class="h2-title">
           <h2>Work</h2>
         </div>
         <div class="project-container">
-          <div class="project-container-1"></div>
-          <div class="project-container-2"></div>
-          <div class="project-container-3"></div>
-          <div class="project-container-4"></div>
-          <div class="project-container-5"></div>
+          <div class="project-container-1">
+            <button class="project-title">Omnifood</button>
+          </div>
+          <div class="project-container-2">
+            <button class="project-title">Chess</button>
+          </div>
+          <div class="project-container-3">
+            <button class="project-title">Calculator App</button>
+          </div>
+          <div class="project-container-4">
+            <button class="project-title">Pig Game</button>
+          </div>
+          <div class="project-container-5 project">
+            <button class="project-title">Run Buddy</button>
+          </div>
         </div>
       </section>
       <section class="contact-container">
-        <div>
+        <div class="h2-title">
           <h2>Contact Me</h2>
         </div>
-        <div class="contact-me-container">
-          <div class="phone-number"></div>
-          <div class="email"></div>
-          <div class="github"></div>
+        <div id="contact-me-container" class="contact-me-container">
+          <div class="phone-number">
+            <h3>Call Me</h3>
+            <a href="tel:6307289548">630-728-9548</a>
+          </div>
+          <div class="email">
+            <h3>Email Me</h3>
+            <a href="mailto:red_douglas@yahoo.com">red_douglas@yahoo.com</a>
+          </div>
+          <div class="github">
+            <h3>View My Github</h3>
+            <a href="https://github.com/dottymeerkat361" target="_blank"
+              >https://github.com/dottymeerkat361
+            </a>
+          </div>
         </div>
       </section>
     </section>
