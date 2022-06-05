@@ -1,6 +1,9 @@
 /* Colors
-##003145 // rgb(0,49,69)
+#003145 // rgb(0,49,69)
 #c7e9f5 // rgb(199,233,245)
+#e3f4fa // rgb(227,244,250)
+rgb(250,166,26)
+#cf711f
 */
 
 /*
@@ -28,6 +31,8 @@ Large: 1.8
 
 :root {
   --primary-color: #003145;
+  --secondary-color: #e3f4fa;
+  --tertiary-color: #eeae41;
   --bg-color: #c7e9f5;
 }
 
@@ -44,6 +49,9 @@ html {
 body {
   color: Var(--primary-color);
   background-color: var(--bg-color);
+  font-family: "rubik", sans-serif;
+  font-weight: 400;
+  line-height: 1;
 }
 
 .header {
@@ -57,7 +65,7 @@ body {
 }
 
 h1 {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 4.4rem;
   color: var(--primary-color);
   padding: 1rem;
@@ -126,6 +134,13 @@ header nav {
   display: flex;
 }
 
+.right-container {
+  margin: 0 0 2.5rem 1rem;
+  padding: 1rem;
+  border-left: 4px solid var(--primary-color);
+  flex: 1 1 75%;
+}
+
 .h2-title {
   font-size: 3.6rem;
   text-align: right;
@@ -135,84 +150,69 @@ header nav {
 }
 
 .about-me-text {
-  margin: 0 0 2.5rem 1rem;
-  padding: 1rem;
-  border-left: 4px solid #003145;
-  flex: 1 1 75%;
   font-size: 1.8rem;
+  letter-spacing: 1.05px;
+  line-height: 1.2;
 }
 
 .project-container {
   display: flex;
   flex-wrap: wrap;
   flex: 1 1 75%;
-  border-left: 4px solid #003145;
+  border-left: 4px solid var(--primary-color);
   padding: 1rem;
   margin: 0 0 2.5rem 1rem;
-  /* width: 90vw; */
-  /* height: 60vh; */
-  background-color: var(--secondary-color);
   gap: 1rem;
 }
 
 .project-container-1 {
   flex: 1 1 100%;
-  padding: 5rem;
   background-image: url("../images/omnifood-logo.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   background-color: #fdf2e9;
-  border: 3px solid #003145;
-  position: relative;
 }
 
 .project-container-2 {
   flex: 1 1 45%;
-  padding: 5rem;
-  border: 3px solid #003145;
   background-image: url("../images/chess-board2.jpg");
   background-repeat: repeat;
   background-size: contain;
   background-position: center;
-  background-color: blue;
-  position: relative;
+  background-color: #cfd4d8;
 }
 
 .project-container-3 {
   flex: 1 1 45%;
-  padding: 5rem;
   background-image: url("../images/calculator.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  border: 3px solid #003145;
   background-color: #cfd4d8;
-  position: relative;
 }
 
 .project-container-4 {
   flex: 1 1 45%;
-  padding: 5rem;
   background-image: url("../images/dice.jpg");
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
-  border: 3px solid #003145;
-  background-color: purple;
-  position: relative;
+  background-color: #cfd4d8;
 }
 
 .project-container-5 {
   flex: 1 1 45%;
-  padding: 5rem;
-  border: 3px solid #003145;
   background-image: url("../images/run-buddy.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  background-color: gray;
+  background-color: #cfd4d8;
+}
+.project {
   position: relative;
+  border: 3px solid var(--primary-color);
+  padding: 5rem;
 }
 
 .project-title {
@@ -220,9 +220,10 @@ header nav {
   background-color: var(--primary-color);
   color: var(--bg-color);
   position: absolute;
-  border: 3px solid #003145;
+  border: 3px solid var(--primary-color);
   top: 30%;
   left: 0%;
+  font-size: 2rem;
 }
 
 .project-title,
@@ -231,23 +232,24 @@ header nav {
   display: block;
   justify-content: flex-start;
   align-items: center;
+  color: var(--secondary-color);
+  font-weight: 700;
+  border: 3px solid var(--primary-color);
 }
 
 .project-title:hover,
 .project-title:active {
-  background-color: #cf711f;
-  border: 3px solid #cf711f;
+  background-color: var(--tertiary-color);
+  border: 3px solid var(--tertiary-color);
+  color: var(--primary-color);
+  font-weight: 700;
 }
 
 .contact-me-container {
   display: flex;
   flex-wrap: wrap;
-  flex: 1 1 75%;
   justify-content: space-around;
   align-items: center;
-  border-left: 4px solid #003145;
-  padding: 1rem;
-  margin-left: 1rem;
 }
 
 .phone-number,
@@ -262,15 +264,14 @@ a:link,
 a:visited {
   display: inline-block;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 700;
   transition: all 0.3s;
   color: var(--primary-color);
 }
 
 a:hover,
 a:active {
-  color: var(--bg-color);
+  color: var(--secondary-color);
   background-color: var(--primary-color);
-
-  /* background-color: var(--tertiary-color); */
+  font-weight: 700;
 }
