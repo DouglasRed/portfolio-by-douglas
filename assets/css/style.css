@@ -276,7 +276,7 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex: 1 1 75%;
-  border-left: 3px solid var(--primary-color);
+  border-left: 4px solid var(--primary-color);
 }
 
 .phone-number,
@@ -350,7 +350,7 @@ header nav {
     border: none;
   }
   .h2-title {
-    border-bottom: 3px solid var(--primary-color);
+    border-bottom: 4px solid var(--primary-color);
   }
 
   .phone-number,
