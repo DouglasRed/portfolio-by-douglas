@@ -223,10 +223,10 @@ header nav {
 
 .project-container-5 {
   flex: 1 1 45%;
-  background-image: url("../images/run-buddy.jpg");
+  background-image: url("../images/run-buddy1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: left;
   background-color: #cfd4d8;
 }
 .project {
@@ -275,6 +275,8 @@ header nav {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  flex: 1 1 75%;
+  border-left: 3px solid var(--primary-color);
 }
 
 .phone-number,
@@ -283,4 +285,77 @@ header nav {
   cursor: pointer;
   font-size: 1.8rem;
   text-align: center;
+}
+
+@media screen and (max-width: 1140px) {
+  .contact-me-container {
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  .contact {
+    text-align: left;
+  }
+  .contact h3 {
+    padding-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 995px) {
+  header {
+    flex-direction: column;
+  }
+  .about-me-text {
+    line-height: 1.3;
+  }
+}
+
+@media screen and (max-width: 695px) {
+  .nav-list {
+    flex-direction: column;
+  }
+  .h2-title {
+    margin-left: 0;
+  }
+  .hero {
+    height: 30vh;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  h1 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .h2-title {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.9rem;
+  }
+
+  .about-me-container,
+  .work-container,
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .right-container {
+    border: none;
+  }
+  .h2-title {
+    border-bottom: 3px solid var(--primary-color);
+  }
+
+  .phone-number,
+  .email,
+  .github {
+    font-size: 1.6rem;
+  }
 }
