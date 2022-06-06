@@ -279,30 +279,30 @@ header nav {
   border-left: 4px solid var(--primary-color);
 }
 
-.phone-number,
-.email,
-.github {
+.contact {
   cursor: pointer;
   font-size: 1.8rem;
   text-align: center;
+  flex: 1 1 25%;
+}
+
+@media screen and (max-width: 1445px) {
+  .contact {
+    flex: 1 1 45%;
+  }
+  .contact-me-container {
+    gap: 2rem;
+  }
 }
 
 @media screen and (max-width: 1140px) {
-  .contact-me-container {
-    flex-direction: column;
-    gap: 2rem;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-align: left;
-  }
   h2 {
-    font-size: 3rem;
+    font-size: 3.3rem;
   }
-  .contact {
-    text-align: left;
-  }
+
   .contact h3 {
     padding-left: 1rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -312,6 +312,19 @@ header nav {
   }
   .about-me-text {
     line-height: 1.3;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contact-me-container {
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .contact {
+    text-align: left;
+    flex: 1 1 90%;
   }
 }
 
@@ -355,7 +368,11 @@ header nav {
 
   .phone-number,
   .email,
-  .github {
+  .github,
+  .linkedin {
     font-size: 1.6rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 }
