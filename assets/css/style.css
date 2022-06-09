@@ -152,6 +152,7 @@ header nav {
 .work-container,
 .contact-container {
   display: flex;
+  margin-right: 3rem;
 }
 
 .right-container {
@@ -300,6 +301,12 @@ header nav {
     font-size: 3.3rem;
   }
 
+  .about-me-container,
+  .work-container,
+  .contact-container {
+    margin-right: 1.5rem;
+  }
+
   .contact h3 {
     padding-left: 1rem;
     font-size: 2.5rem;
@@ -337,6 +344,11 @@ header nav {
   }
   .hero {
     height: 30vh;
+  }
+  .about-me-container,
+  .work-container,
+  .contact-container {
+    margin-right: 0;
   }
 }
 
